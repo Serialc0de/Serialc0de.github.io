@@ -1,0 +1,380 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: Px Grotesk;
+}
+
+
+.left-col, .right-col {
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+}
+
+.left-col {
+  background-color: #c14953;
+}
+
+
+.right-col {
+  left: 50%;
+}
+
+.right-col {
+  background-color: #fff;
+}
+
+.upper, .bottom {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  -webkit-animation: appear-text 0.0001s linear forwards;
+  -moz-animation: appear-text 0.0001s linear forwards;
+}
+
+.upper {
+background-color: #e5dcc5;
+color: #000;
+animation-delay: 3s;
+}
+
+.bottom {
+  top: 50%;
+  background: url(cover.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  color: #000;
+  animation-delay: 4.2s;
+}
+
+
+@media (max-width: 900px) {
+
+  .left-col {
+    width: 100%
+  }
+
+  .right-col {
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+}
+
+.logo {
+  font-family:Nova;
+  color: #fff;
+  position: fixed;
+  margin: 1em;
+  font-weight: bolder;
+  font-size: 25px;
+  letter-spacing: 5px;
+  z-index: 1;
+}
+
+.year {
+  position: absolute;
+  bottom: 5%;
+  color: #000;
+  font-family: Px Grotesk;
+  font-weight: bolder;
+  left: 0;
+  transform: rotate(-90deg);
+}
+
+.buy {
+  text-decoration: underline;
+  font-family: Px Grotesk;
+  color: #333;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 1.4em;
+  text-transform: uppercase;
+}
+
+.cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background: url(album.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  -webkit-animation: appear-text 0.0001s linear forwards;
+  -moz-animation: appear-text 0.0001s linear forwards;
+  animation-delay: 2.6s;
+
+
+}
+
+.data {
+  position: absolute;
+  top: 35%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+#name {
+  font-weight: bolder;
+}
+
+#artist {
+  font-size: 10px;
+}
+
+.play, .next ion-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  opacity: 0.6;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2em;
+}
+
+.about {
+  position: absolute;
+  top: 40%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+}
+
+.about h1 {
+  font-weight: bolder;
+  color: #6f6457;
+  font-family: Px Grotesk;
+  text-transform: uppercase;
+}
+
+.about p {
+  color: #bcac98;
+  font-family: #Px Grotesk;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.about span:hover {
+  text-decoration: underline;
+}
+
+.media {
+  margin-top: 40px;
+}
+
+.media p {
+  color: #6f6457;
+  margin-bottom: 0;
+}
+
+.media ul {
+  position: absolute;
+  list-style: none;
+  left: -24%;
+}
+
+.media ul li {
+  display: inline-block;
+  color: #bcac98;
+}
+
+.next {
+  position: absolute;
+  top: 24%;
+  left: 30%;
+}
+
+.data-2{
+  position: absolute;
+  top: 12%;
+  left: 45%;
+  color: #fff;
+  font-family: Px Grotesk;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.more {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  font-size: 15px;
+  color:#333;
+  text-transform: uppercase;
+  font-family: Px Grotesk;
+  text-decoration: underline;
+}
+
+.block-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+
+}
+
+.block-cover::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #c14953;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -webkit-animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -moz-animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 2s;
+}
+
+.upper-block {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+
+}
+
+.upper-block::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #e5dcc5;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -webkit-animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -moz-animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 2.4s;
+}
+
+
+.block-bottom {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 50vh;
+
+}
+
+.block-bottom::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #c4cdde;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -webkit-animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -moz-animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 3s;
+}
+
+/* ----------------------------------------*/
+/* ---------ANIMATION KEYFRAMES------------*/
+/* ----------------------------------------*/
+
+/* ---------ANIMATE BLOCKS------------*/
+@keyframes rev-block {
+
+     0% {
+          left: 0;
+          width: 0%;
+     }
+     50% {
+          left: 0;
+          width: 100%;
+     }
+     100% {
+          left: 100%;
+          width: 0%;
+     }
+
+}
+
+@-webkit-keyframes rev-block {
+
+     0% {
+          left: 0;
+          width: 0%;
+     }
+     50% {
+          left: 0;
+          width: 100%;
+     }
+     100% {
+          left: 100%;
+          width: 0%;
+     }
+
+}
+
+@-moz-keyframes rev-block {
+
+     0% {
+          left: 0;
+          width: 0%;
+     }
+     50% {
+          left: 0;
+          width: 100%;
+     }
+     100% {
+          left: 100%;
+          width: 0%;
+     }
+
+}
+
+
+/* ---------TEXT APPEAR------------*/
+
+@keyframes appear-text {
+
+     0% {
+          opacity: 0;
+     }
+     100% {
+          opacity: 1;
+     }
+
+}
+
+@-webkit-keyframes appear-text {
+
+     0% {
+          opacity: 0;
+     }
+     100% {
+          opacity: 1;
+     }
+
+}
+
+@-moz-keyframes appear-text {
+
+     0% {
+          opacity: 0;
+     }
+     100% {
+          opacity: 1;
+     }
+
+}
