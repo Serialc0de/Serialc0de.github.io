@@ -1,3 +1,22 @@
+<!-- A grey horizontal navbar that becomes vertical on small screens -->
+<nav class="navbar navbar-expand-sm bg-light">
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+  </ul>
+
+</nav>
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Serialc0de/Serialc0de.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
