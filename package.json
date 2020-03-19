@@ -1,50 +1,48 @@
 {
-    "title": "Resume",
-    "name": "startbootstrap-resume",
-    "version": "5.0.8",
-    "scripts": {
-        "start": "node_modules/.bin/gulp watch"
-    },
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-        "email": "feedback@startbootstrap.com"
-    },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
-    },
-    "dependencies": {
-        "@fortawesome/fontawesome-free": "5.10.2",
-        "bootstrap": "4.3.1",
-        "jquery": "3.4.1",
-        "jquery.easing": "^1.4.1"
-    },
-    "devDependencies": {
-        "browser-sync": "2.26.7",
-        "del": "5.1.0",
-        "gulp": "4.0.2",
-        "gulp-autoprefixer": "7.0.0",
-        "gulp-clean-css": "4.2.0",
-        "gulp-header": "2.0.9",
-        "gulp-plumber": "^1.2.1",
-        "gulp-rename": "1.4.0",
-        "gulp-sass": "4.0.2",
-        "gulp-uglify": "3.0.2",
-        "merge-stream": "2.0.0"
-    }
+  "name": "bilberry-hugo-theme",
+  "version": "2.0.0",
+  "description": " ",
+  "dependencies": {
+    "laravel-mix": "^5.0.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "algoliasearch": "^3.35.1",
+    "autocomplete.js": "^0.37.1",
+    "cross-env": "^6.0.3",
+    "flexslider": "^2.7.2",
+    "highlight.js": "^9.18.1",
+    "instantsearch.js": "^3.7.0",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "resolve-url-loader": "^3.1.1",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "skeleton-css": "^2.0.4",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lednerb/bilberry-hugo-theme.git"
+  },
+  "keywords": [
+    "Bilberry",
+    "Hugo",
+    "Theme"
+  ],
+  "author": "@Lednerb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lednerb/bilberry-hugo-theme/issues"
+  },
+  "homepage": "https://github.com/Lednerb/bilberry-hugo-theme#readme"
 }
