@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/favicon.png"/>
+
+    <!-- Font Files -->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    <title>Food Recipes</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css"/>
+    <link rel='stylesheet' id='nivoslider-css' href='js/nivo-slider/nivo-slider.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='prettyPhoto-css' href='js/prettyPhoto/css/prettyPhoto.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='plupload_css-css' href='js/jquery.ui.plupload/css/jquery.ui.plupload.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='select2-css' href='css/select2.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='font-awesome-css' href='css/font-awesome.min.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all"/>
+    <link rel='stylesheet' id='responsive-css' href='responsive.css?ver=4.1.1' type='text/css' media='all'/>
+
+</head>
+
+<body>
+
+<!-- ============= HEADER STARTS HERE ============== -->
+<div id="header-wrapper" class="clearfix">
+    <div id="header" class="clearfix">
+        <!-- WEBSITE LOGO -->
+        <a class="responsive_logo" href="index.html"><img src="images/logo.png" alt="" class="logo"/></a>
+        <a href="index.html"><h1 class="sitenametext">Food Recipes</h1></a>
+        <a href="index.html"><img class="header-img" src="images/header-image.png" alt="Food Recipes"/></a>
+    </div>
+    <!-- end of header div -->
+
+    <span class="w-pet-border"></span>
+
+    <!-- NAVIGATION BAR STARTS HERE -->
+    <div id="nav-wrap">
+        <div class="inn-nav clearfix">
+
+            <!-- MAIN NAVIGATION STARTS HERE -->
+            <ul id="menu-main-navigation" class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Slider</a>
+                    <ul class="sub-menu">
+                        <li><a href="basic-slider.html">Basic Slider</a></li>
+                        <li><a href="nivo-slider.html">Nivo Slider</a></li>
+                        <li><a href="thumbnail-slider.html">Thumbnail Slider</a></li>
+                    </ul>
+                </li>
+                <li><a href="recipes-listing.html">Recipe listing</a>
+                    <ul class="sub-menu">
+                        <li><a href="recipe-single-1.html">Recipe Single one</a></li>
+                        <li><a href="recipe-single-2.html">Recipe Single two</a></li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="blog.html">Blog</a>
+                    <ul class="sub-menu">
+                        <li> <a href="single.html">Blog Single</a> </li>
+                    </ul>
+                </li>
+                <li><a href="about-us.html">About</a></li>
+
+                <li>
+                    <a href="chef-listing.html">Chef Listing</a>
+                    <ul class="sub-menu">
+                        <li><a href="author.html">Chef Single</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="features.html">Features</a>
+                    <ul class="sub-menu">
+                        <li><a href="author.html">Author</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="advance-search.html">Advance Search</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://themeforest.net/item/food-recipes-food-website-and-blog-template/1575003?ref=InspiryThemes">Buy Template</a>
+                </li>
+            </ul>
+            <!-- MAIN NAVIGATION ENDS HERE -->
+
+            <!-- SOCIAL NAVIGATION -->
+            <ul id="menu-social-menu" class="social-nav">
+                <li class="facebook"><a href="#"></a></li>
+                <li class="twitter"><a href="#"></a></li>
+                <li class="rss"><a href="#"></a></li>
+                <li class="flickr"><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of nav-wrap -->
+    <!-- NAVIGATION BAR ENDS HERE -->
+
+</div>
+<!-- end of header-wrapper div -->
+
+<!-- ============= HEADER ENDS HERE ============== -->
+
+
+<!-- ============= CONTAINER STARTS HERE ============== -->
+<div class="main-wrap">
+    <div id="container">
+        <!-- WEBSITE SEARCH STARTS HERE -->
+
+        <div class="top-search  clearfix">
+            <h3 class="head-pet"><span>Recipe Search</span></h3>
+
+            <form action="#" id="searchform">
+                <p>
+                    <input type="text" name="s" id="s" class="field" value="" placeholder="Search for"/>
+                    <input type="submit" name="s_submit" id="s-submit" value=""/>
+                </p>
+            </form>
+
+            <p class="statement"><span class="fireRed">Recipe Types:</span>
+                <a href="#">Beef</a> , <a href="#">Cheese</a> , <a href="#">Chicken</a> , <a href="#">Chocolate</a> , <a href="#">Fish</a> , <a href="#">Pizzas</a>, <a href="#">Potatos</a>, <a href="#">Rolls</a>
+            </p>
+
+        </div>
+        <!-- end of top-search div-->
+
+
+        <!-- ============= CONTENT AREA STARTS HERE ============== -->
+        <div id="content" class="clearfix ">
+            <div id="left-area" class="clearfix">
+                <div class="post">
+                    <h1 class="post-title entry-title">
+                        <a  href="single.html" rel="bookmark" title="Permanent Link to Best Bread pairing for Barbeque?">Best Bread pairing for Barbeque?</a>
+                    </h1>
+                    <p class="meta vcard"> By: <a class="author fn" href="#"> admin </a>
+                        <span>|</span>
+                        <span class="comments"> <a href="#" title="Comment on Best Bread pairing for Barbeque?">1 Comment</a> </span>
+                        <span>|</span>
+                        <time class="entry-date update" datetime="2012-12-06T11:08:16+00:00">On: December 6, 2012</time>
+                        <span>|</span> Category:
+                        <span class="cats"><a href="#" rel="category tag">barbeque</a></span>
+                    </p>
+                    <div class="post-thumb single-img-box">
+                        <a rel="prettyPhoto" href="#" title="Best Bread pairing for Barbeque?">
+                            <img src="images/demo/accor_33-575x262.jpg" class="attachment-thumbnail-blog wp-post-image" alt="accor_3"/>
+                        </a>
+                    </div>
+                    <p>
+                        Quis sed mid elit, risus aliquet placerat. Pid et, vel phasellus augue a ultrices, natoque
+                        sociis porta proin nec? Dictumst magna rhoncus quis diam! Nascetur non risus elit pellentesque
+                        mauris pulvinar purus tincidunt, ac urna, placerat mus porta, egestas ultrices turpis. Amet
+                        adipiscing lectus ut eu natoque aliquet amet, augue...
+                        <a href="single.html" class=" res-more">more</a>
+                    </p>
+                    <a href="single.html" class="readmore rightbtn">Read more</a>
+                </div>
+                <!-- end of post div -->
+                <div class="post-50 post category-economical" id="post-50">
+
+                    <h1 class="post-title entry-title"><a  href="#" rel="bookmark" title="Permanent Link to baking question">baking question</a></h1>
+
+                    <p class="meta vcard">VBy: <a class="author fn" href="#">Vadmin </a>
+                        <span>|</span>
+                        <span class="comments"> <a href="#" title="Comment on baking question">0 Comments</a>  </span>
+                        <span>|</span>
+                        <time class="entry-date update" datetime="2012-11-06T11:00:44+00:00">On: November 6, 2012</time>
+                        <span>|</span>
+                        Category:
+                        <span class="cats"><a href="#" rel="category tag">Economical</a></span>
+                    </p>
+                    <div class="post-thumb single-img-box">
+                        <a rel="prettyPhoto" href="#" title="baking question">
+                            <img src="images/demo/accor_23-575x262.jpg"  class="attachment-thumbnail-blog wp-post-image" alt="accor_2"/>
+                        </a>
+                    </div>
+                    <p>
+                        Quis sed mid elit, risus aliquet placerat. Pid et, vel phasellus augue a ultrices, natoque
+                        sociis porta proin nec? Dictumst magna rhoncus quis diam! Nascetur non risus elit pellentesque
+                        mauris pulvinar purus tincidunt, ac urna, placerat mus porta, egestas ultrices turpis. Amet
+                        adipiscing lectus ut eu natoque aliquet amet, augue...
+                        <a href="single.html" class=" res-more">more</a>
+                    </p>
+                    <a href="single.html" class="readmore rightbtn">Read more</a>
+                </div>
+                <!-- end of post div -->
+                <div class="post-57 post category-weekend" id="post-57">
+
+                    <h1 class="post-title entry-title">
+                        <a  href="single.html"  rel="bookmark" title="Permanent Link to Fresh Food on TV: Weekend Edition">Fresh Food on TV:Weekend Edition</a>
+                    </h1>
+
+                    <p class="meta vcard">
+                        By: <a class="author fn" href="#"> admin </a>  <span>|</span>
+                        <span class="comments">
+                            <a href="#" title="Comment on Fresh Food on TV: Weekend Edition">0 Comments</a>
+                        </span>
+                        <span>|</span>
+                        <time class="entry-date update" datetime="2012-10-06T11:14:53+00:00">On: October 6, 2012</time>
+                        <span>|</span>
+                        Category:
+                        <span class="cats"><a href="#" rel="category tag">weekend</a></span>
+                    </p>
+                    <div class="post-thumb single-img-box">
+                        <a rel="prettyPhoto" href="#" title="Fresh Food on TV: Weekend Edition">
+                            <img src="images/demo/accor_43-575x262.jpg" class="attachment-thumbnail-blog wp-post-image" alt="accor_4"/>
+                        </a>
+                    </div>
+                    <p>
+                        Dignissim velit in hac dignissim in tristique vut. Odio, pulvinar lectus odio? Amet aenean? Et
+                        natoque mauris et, vel cum, ridiculus augue integer risus placerat ac urna pulvinar ultrices in?
+                        Turpis ut mattis cras nec augue porttitor sit, nec! Cursus augue sagittis, vut pid, a duis cum
+                        nisi? Velit dis...
+                        <a href="single.html" class=" res-more">more</a>
+                    </p>
+                    <a href="single.html" class="readmore rightbtn">Read more</a>
+                </div>
+                <!-- end of post div -->
+
+                <div class="post-65 post category-health" id="post-65">
+
+                    <h1 class="post-title entry-title"><a href="single.html" rel="bookmark" title="Permanent Link to Diet &#038; Nutrition Healthy Eating">Diet &#038;Nutrition Healthy Eating</a></h1>
+
+                    <p class="meta vcard">  By: <a class="author fn" href="#"> admin </a> <span>|</span>
+                        <span class="comments">
+                            <a href="#" title="Comment on Diet &amp; Nutrition Healthy Eating">0 Comments</a>
+                        </span>
+                        <span>|</span>
+                        <time class="entry-date update" datetime="2012-06-06T11:38:58+00:00">On: June 6, 2012</time>
+                        <span>|</span>
+                        Category:
+                        <span class="cats"><a href="#" rel="category tag">health</a></span>
+                    </p>
+                    <div class="post-thumb single-img-box">
+                        <a rel="prettyPhoto" href="#" title="Diet &#038; Nutrition Healthy Eating">
+                            <img src="images/demo/nivo_43-575x262.jpg" class="attachment-thumbnail-blog wp-post-image" alt="nivo_4"/>
+                        </a>
+                    </div>
+                    <p>
+                        Dignissim velit in hac dignissim in tristique vut. Odio, pulvinar lectus odio? Amet aenean? Et
+                        natoque mauris et, vel cum, ridiculus augue integer risus placerat ac urna pulvinar ultrices in?
+                        Turpis ut mattis cras nec augue porttitor sit, nec! Cursus augue sagittis, vut pid, a duis cum
+                        nisi? Velit dis...
+                        <a href="single.html" class=" res-more">more</a>
+                    </p>
+                    <a href="single.html" class="readmore rightbtn">Read more</a>
+                </div>
+                <!-- end of post div -->
+                <div class="post-62 post category-health" id="post-62">
+
+                    <h1 class="post-title entry-title"><a href="single.html" rel="bookmark" title="Permanent Link to 10 Tips To Healthy Eating">10 Tips To Healthy Eating</a></h1>
+
+                    <p class="meta vcard"> By: <a class="author fn" href="#"> admin </a> <span>|</span>
+                        <span class="comments">
+                            <a href="#" title="Comment on 10 Tips To Healthy Eating">0 Comments</a>
+                        </span>
+                        <span>|</span>
+                        <time class="entry-date update" datetime="2012-02-06T11:16:59+00:00">On: February 6, 2012</time>
+                        <span>|</span>
+                        Category:
+                        <span class="cats"><a href="#" rel="category tag">health</a></span>
+                    </p>
+                    <div class="post-thumb single-img-box">
+                        <a rel="prettyPhoto"  href="images/demo/single-recipe_2.jpg" title="10 Tips To Healthy Eating"><img src="images/demo/single-recipe_2.jpg" class="attachment-thumbnail-blog wp-post-image" alt="single-recipe_2"/> </a>
+                    </div>
+                    <p>
+                        Eat a variety of nutrient-rich foods. You need more than 40 different nutrients for good health,
+                        and no single food supplies them all. Your daily food selection should include bread and other
+                        whole-grain products; fruits; vegetables; dairy products; and meat, poultry, fish and other
+                        protein foods. How much you should eat...
+                        <a href="single.html" class=" res-more">more</a>
+                    </p>
+                    <a href="single.html" class="readmore rightbtn">Read more</a>
+                </div>
+                <!-- end of post div -->
+                <div id="pagination">
+                    <a href="#" class="btn current">1</a>
+                    <a href="#" class="btn">2</a>
+                </div>
+            </div>
+            <!-- end of left-area -->
+            <!-- LEFT AREA ENDS HERE -->
+
+            <!-- ========== START OF SIDEBAR AREA ========== -->
+            <div id="sidebar">
+                <div class="widget fav-recipes nostylewt">
+                    <h2 class="w-bot-border"><span>MISC</span> Recipes</h2>
+
+                    <div class="tabed">
+                        <ul class="tabs clearfix">
+                            <li class="current">Recent<span></span></li>
+                            <li>Popular<span></span></li>
+                            <li>Random<span></span></li>
+                        </ul>
+                        <div class="block current">
+                            <ul class="highest">
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/7a0a46455c4ec56a5a02c097374fc513-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="7a0a46455c4ec56a5a02c097374fc513"/></a>
+                                    <h5> <a href="recipe-single-1.html">Chocolate Earl Grey Pots de Creme Recipe</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.3 / 5)
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/Pesto-Pizza-with-Roasted-Garlic-Potato2-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Pesto-Pizza-with-Roasted-Garlic-Potato2"/></a>
+                                    <h5> <a href="recipe-single-1.html">Pesto Pizza With Roasted Garlic &#038; Potato</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.1 / 5)
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/Pimento-Cheese-Potato-Skins-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Pimento-Cheese-Potato-Skins"/></a>
+                                    <h5>
+                                        <a href="recipe-single-1.html">Pimento Cheese Potato Skins</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.4 / 5)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end of block div -->
+                        <div class="block">
+                            <ul class="highest">
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box">
+                                        <img src="images/demo/Goat-Cheese-Chorizo-Rolls2-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Goat-Cheese-Chorizo-Rolls2"/>
+                                    </a>
+                                    <h5> <a href="recipe-single-1.html">Goat Cheese and Chorizo Rolls</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.3 / 5)
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box">
+                                        <img src="images/demo/Pimento-Cheese-Potato-Skins-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Pimento-Cheese-Potato-Skins"/>
+                                    </a>
+                                    <h5> <a href="recipe-single-1.html">Pimento Cheese Potato Skins</a></h5>
+
+                                    <p class="rate"> <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.4 / 5)
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box">
+                                        <img src="images/demo/Warm-Marinated-Flank-Steak-Salad-1-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Warm-Marinated-Flank-Steak-Salad-1"/>
+                                    </a>
+                                    <h5> <a href="recipe-single-1.html">Warm Flank Steak Salad With Mint And Cilantro</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        ( 4.2 / 5)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end of block div -->
+                        <div class="block">
+                            <ul class="highest">
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/Goat-Cheese-Chorizo-Rolls2-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Goat-Cheese-Chorizo-Rolls2"/></a>
+                                    <h5> <a href="recipe-single-1.html">Goat Cheese and Chorizo Rolls</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.3 / 5)
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="recipe-single-1.html"  class="img-box"><img src="images/demo/Jalapeno-Poppers-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Jalapeño-Poppers"/></a>
+                                    <h5><a href="http://www.960demo.com/foodrecipes-dev/recipe/jalapeno-poppers/">Jalapeno Poppers</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.4 / 5)
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/7a0a46455c4ec56a5a02c097374fc513-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="7a0a46455c4ec56a5a02c097374fc513"/></a>
+                                    <h5> <a href="recipe-single-1.html">Chocolate Earl Grey Pots de Creme Recipe</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span  class="on"></span>
+                                        <span class="off"></span>
+                                        (4.3 / 5)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end of block div -->
+                        <div class="bot-border"></div>
+                    </div>
+                    <!-- end of tabed div -->
+                </div>
+                <div id="recipes-from-recipe-type-2" class="widget nostylewt Recipes_from_Recipe_Type clearfix">
+                    <div class="recipes-slider-widget rt">
+                        <h2 class="w-bot-border"><span>Pizzas</span> &amp; Rolls</h2>
+                        <ul class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-slides="li" data-cycle-next=".nrecipes-from-recipe-type-2" data-cycle-prev=".precipes-from-recipe-type-2">
+                            <li class="cycle-slide cycle-sentinel">
+                                <a href="#">
+                                    <img src="images/demo/Pesto-Pizza-with-Roasted-Garlic-Potato21-302x196.jpg" class="attachment-recipe-slider-widget wp-post-image" alt="Pesto-Pizza-with-Roasted-Garlic-Potato2">                                </a>
+                                <p class="info-box">Pesto Pizza With Roasted Garlic &amp; Potato</p>
+                            </li>
+                            <li class="cycle-slide">
+                                <a href="#">
+                                    <img src="images/demo/Pesto-Pizza-with-Roasted-Garlic-Potato21-302x196.jpg" class="attachment-recipe-slider-widget wp-post-image" alt="Pesto-Pizza-with-Roasted-Garlic-Potato2">                                </a>
+                                <p class="info-box">Pesto Pizza With Roasted Garlic &amp; Potato</p>
+                            </li>
+                            <li class="cycle-slide cycle-slide-active">
+                                <a href="#">
+                                    <img src="images/demo/Goat-Cheese-Chorizo-Rolls21-302x196.jpg" class="attachment-recipe-slider-widget wp-post-image" alt="Goat-Cheese-Chorizo-Rolls2">                                </a>
+                                <p class="info-box">Goat Cheese and Chorizo Rolls</p>
+                            </li>
+                        </ul>
+                        <span class="prev precipes-from-recipe-type-2 cycle-prev"></span>
+                        <span class="next nrecipes-from-recipe-type-2 cycle-next"></span>
+                    </div>
+                </div>
+                <div class="widget nostylewt Weekly_Special_Widget wk-special clearfix">
+                    <h2 class="w-bot-border"><span>Weekly</span> Special </h2>
+
+                    <div class="img-box for-all">
+                        <a href="recipe-single-1.html">
+                            <img src="images/demo/Grilled-Five-Spice-Chicken-122x132.jpg" class="attachment-weekly-special-thumb wp-post-image" alt="Grilled-Five-Spice-Chicken"/>
+                        </a>
+                    </div>
+                    <div class="for-res">
+                        <a href="recipe-single-1.html">
+                            <img src="images/demo/Grilled-Five-Spice-Chicken-251x132.jpg" class="attachment-weekly-for-res wp-post-image" alt="Grilled-Five-Spice-Chicken"/>
+                        </a>
+                    </div>
+                    <h4> <a href="recipe-single-1.html">Vietnamese Style Grilled Five Spice Chicken</a></h4>
+
+                    <p>It may not be in my best interest to admit this, but here goes nothing: grilling chicken scares  me. It’s just...
+                        <a href="recipe-single-1.html"> more</a>
+                    </p>
+                    <a href="recipe-single-1.html" class="readmore">Read More</a>
+                </div>
+                <div class="widget newsEvent nostylewt">
+                    <h2 class="w-bot-border">
+                        <span>News</span> and Events</h2>
+                    <ul class="list">
+                        <li>
+                            <h5><a href="single.html">Hello world!</a></h5>
+                            <p>Welcome to WordPress. This is your first post. Edit or delete it,...<a href="single.html">more</a></p>
+                        </li>
+                        <li>
+                            <h5> <a href="single.html">Best Bread pairing for Barbeque?</a></h5>
+                            <p>Quis sed mid elit, risus aliquet placerat. Pid et, vel phasellus augue...<a href="single.html">more</a> </p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="recipe_types-2" class="widget nostylewt Recipe_Types_Widget clearfix">
+                    <h2 class="w-bot-border bmarginless"><span>Recipe</span> Types</h2>
+
+                    <div class="archives clearfix">
+                        <ul>
+                            <li class="cat-item cat-item-26"><a href="#">Beef</a> </li>
+                            <li class="cat-item cat-item-31"><a href="#">Cheese</a> </li>
+                            <li class="cat-item cat-item-33"><a href="#">Chicken</a> </li>
+                            <li class="cat-item cat-item-36"><a href="#">Chocolate</a> </li>
+                            <li class="cat-item cat-item-41"><a href="#">Fish</a> </li>
+                            <li class="cat-item cat-item-50"><a href="#">Pizzas</a> </li>
+                            <li class="cat-item cat-item-52"><a href="#">Potatos</a> </li>
+                            <li class="cat-item cat-item-53"><a href="#">Rolls</a> </li>
+                        </ul>
+                    </div>
+                    <!-- end of fav-recipes widget -->
+                </div>
+
+                <div id="recent-posts-2" class="widget nostylewt widget_recent_entries clearfix">
+                    <h2 class="w-bot-border"><span>Recent</span> Posts</h2>
+                    <ul>
+                        <li>
+                            <a href="#">Hello world!</a>
+                        </li>
+                        <li>
+                            <a href="#">Best  Bread pairing for Barbeque?</a>
+                        </li>
+                        <li>
+                            <a href="#">baking question</a>
+                        </li>
+                        <li>
+                            <a href="#">Fresh Food on TV: Weekend Edition</a>
+                        </li>
+                        <li>
+                            <a href="#">Full Irish Breakfast In Manhattan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="displaytweetswidget-2" class="widget nostylewt widget_displaytweetswidget clearfix">
+                    <h2 class="w-bot-border">Inspiry Themes</h2>
+
+                    <p>Check out 'Cream - Sweets and Bakers WordPress Theme' on
+                        <a href="http://www.twitter.com/EnvatoMarket" target="_blank">@EnvatoMarket</a> by
+                        <a href="http://www.twitter.com/InspiryThemes" target="_blank">@InspiryThemes</a>
+                        <a href="http://twitter.com/search?q=%23themeforest&src=hash" target="_blank">#themeforest</a>
+                        <a href="http://t.co/we8M81zKf0" target="_blank">http://t.co/we8M81zKf0</a><br/>
+                        <small class="muted">- Thursday Nov 6 - 7:25am</small>
+                    </p>
+                    <p>Data Sanitization and Validation With WordPress <a href="http://t.co/AJJoOERrwp" target="_blank">http://t.co/AJJoOERrwp</a>
+                        via <a href="http://www.twitter.com/tutsplus" target="_blank">@tutsplus</a><br/>
+                        <small class="muted">- Sunday Nov 2 - 8:02am</small>
+                    </p>
+                </div>
+                <div id="recent-comments-2" class="widget nostylewt widget_recent_comments clearfix">
+                    <h2 class="w-bot-border"><span>Recent</span> Comments</h2>
+                    <ul id="recentcomments">
+                        <li class="recentcomments"><span class="comment-author-link">admin</span> on <a  href="#">Best Bread pairing for Barbeque?</a></li>
+                        <li class="recentcomments"><span class="comment-author-link">
+                            <a href='#' rel='external nofollow' class='url'>Mr WordPress</a></span> on <a href="#">Hello world!</a>
+                        </li>
+                        <li class="recentcomments"><span class="comment-author-link">John Doe</span> on <a href="#">Goat Cheese and Chorizo Rolls</a></li>
+                        <li class="recentcomments"><span class="comment-author-link"><a href='#' rel='external nofollow' class='url'>John Doe</a></span> on
+                            <a href="#">Goat Cheese and Chorizo Rolls</a></li>
+                        <li class="recentcomments"><span class="comment-author-link"><a  href='#' rel='external nofollow' class='url'>Saqib</a></span> on <a href="#">Goat Cheese and Chorizo Rolls</a></li>
+                    </ul>
+                </div>
+                <div id="categories-2" class="widget nostylewt widget_categories clearfix">
+                    <h2 class="w-bot-border"> <span>Categories</span></h2>
+                    <ul>
+                        <li class="cat-item cat-item-2"><a href="#">barbeque</a> </li>
+                        <li class="cat-item cat-item-3"><a href="#">breakfast</a> </li>
+                        <li class="cat-item cat-item-4"><a href="#">Economical</a> </li>
+                        <li class="cat-item cat-item-5"><a href="#">health</a> </li>
+                        <li class="cat-item cat-item-1"><a  href="#">Uncategorized</a> </li>
+                        <li class="cat-item cat-item-8"><a href="#">weekend</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end of sidebar -->
+        </div>
+        <!-- end of content div -->
+        <div class="bot-ads-area">
+            <div class="ads-642x79">
+                <a href="#"><img src="images/ad-652x95.png" alt="Recipe Ads"/></a>
+            </div>
+        </div>
+        <!-- CONTENT ENDS HERE -->
+
+    </div>
+    <!-- end of container div -->
+</div>
+<div class="w-pet-border"></div>
+<!-- ============= CONTAINER AREA ENDS HERE ============== -->
+
+
+<!-- ============= BOTTOM AREA STARTS HERE ============== -->
+<div id="bottom-wrap">
+    <ul id="bottom" class="clearfix">
+
+        <li class="about">
+            <a href="about-us.html"><img src="images/footer-logo.png" alt="Food Recipes" class="footer-logo"/></a>
+
+            <p>Donec sollicitudin molestie malesuada. Proin eget tortor risus. Vivamus magna justo, lacinia eget
+                consectetur sed, convallis at tellus. ...</p>
+            <a href="about-us.html" class="readmore">Read more About Us</a>
+        </li>
+
+        <li id="recent_recipe_footer_widget-3" class="Recent_Recipe_Footer_Widget">
+            <h2 class="w-bot-border">
+                <span>Recent</span> Recipes</h2>
+            <ul class="recent-posts nostylewt">
+                <li class="clearfix">
+                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/7a0a46455c4ec56a5a02c097374fc513-63x53.jpg" class="attachment-most-rated-thumb wp-post-image" alt="7a0a46455c4ec56a5a02c097374fc513"/></a>
+                    <h5><a href="recipe-single-1.html">Chocolate Earl Grey Pots de...</a></h5>
+
+                    <p>2 cups cream 120 grams dark chocolate, chopped 2 bags...</p>
+                </li>
+                <li class="clearfix">
+                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/Pesto-Pizza-with-Roasted-Garlic-Potato2-63x53.jpg" class="attachment-most-rated-thumb wp-post-image" alt="Pesto-Pizza-with-Roasted-Garlic-Potato2"/></a>
+                    <h5><a href="recipe-single-1.html">Pesto Pizza With Roasted Garlic...</a></h5>
+                    <p>Mention potatoes on pizza and you’ll get one of two...</p>
+                </li>
+            </ul>
+        </li>
+        <li id="displaytweetswidget-3" class="widget_displaytweetswidget">
+            <h2>Inspiry Themes</h2>
+
+            <p>Check out 'Cream - Sweets and Bakers WordPress Theme' on
+                <a href="http://www.twitter.com/EnvatoMarket" target="_blank">@EnvatoMarket</a> by
+                <a href="http://www.twitter.com/InspiryThemes" target="_blank">@InspiryThemes</a>
+                <a href="http://twitter.com/search?q=%23themeforest&src=hash" target="_blank">#themeforest</a>
+                <a href="http://t.co/we8M81zKf0" target="_blank">http://t.co/we8M81zKf0</a><br/>
+                <small class="muted">- Thursday Nov 6 - 7:25am</small>
+            </p>
+            <p>Data Sanitization and Validation With WordPress <a href="http://t.co/AJJoOERrwp" target="_blank">http://t.co/AJJoOERrwp</a>
+                via <a href="http://www.twitter.com/tutsplus" target="_blank">@tutsplus</a><br/>
+                <small class="muted">- Sunday Nov 2 - 8:02am</small>
+            </p>
+        </li>
+
+    </ul>
+    <!-- end of bottom div -->
+</div>
+<!-- end of bottom-wrap div -->
+<!-- ============= BOTTOM AREA ENDS HERE ============== -->
+
+
+<!-- ============= FOOTER STARTS HERE ============== -->
+
+<div id="footer-wrap">
+    <div id="footer">
+        <p class="copyright">Copyright &copy; 2016, Food Recipes - A Premium HTML Template</p>
+
+        <p class="dnd">Developed by <a href="http://themeforest.net/user/inspirythemes">Inspiry Themes</a></p>
+    </div>
+    <!-- end of footer div -->
+</div>
+<!-- end of footer-wrapper div -->
+
+<!-- ============= FOOTER STARTS HERE ============== -->
+
+<script type='text/javascript' src='js/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='js/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='js/jquery.validate.min.js?ver=1.11.1'></script>
+<script type='text/javascript' src='js/jquery.form.min.js?ver=3.48.0'></script>
+<script type='text/javascript' src='js/jquery.easing.1.3.js?ver=1.3'></script>
+<script type='text/javascript' src='js/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.3'></script>
+<script type='text/javascript' src='js/jquery.cycle2.js?ver=2.0130909'></script>
+<script type='text/javascript' src='js/nivo-slider/jquery.nivo.slider.js?ver=2.7.1'></script>
+<script type='text/javascript' src='js/accordion-slider.js?ver=1.0'></script>
+<script type='text/javascript' src='js/jquery-ui.min.js?ver=1.10.2'></script>
+<script type='text/javascript' src='js/plupload.full.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='js/jquery.ui.plupload/jquery.ui.plupload.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='js/select2.full.min.js?ver=4.0'></script>
+<script type='text/javascript' src='js/script.js?ver=1.0'></script>
+
+</body>
+</html>

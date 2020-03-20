@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/favicon.png"/>
+
+    <!-- Font Files -->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    <title>Food Recipes</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css"/>
+    <link rel='stylesheet' id='nivoslider-css' href='js/nivo-slider/nivo-slider.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='prettyPhoto-css' href='js/prettyPhoto/css/prettyPhoto.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='plupload_css-css' href='js/jquery.ui.plupload/css/jquery.ui.plupload.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='select2-css' href='css/select2.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='font-awesome-css' href='css/font-awesome.min.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all"/>
+    <link rel='stylesheet' id='responsive-css' href='responsive.css?ver=4.1.1' type='text/css' media='all'/>
+
+</head>
+
+<body>
+
+<!-- ============= HEADER STARTS HERE ============== -->
+<div id="header-wrapper" class="clearfix">
+    <div id="header" class="clearfix">
+        <!-- WEBSITE LOGO -->
+        <a class="responsive_logo" href="index.html"><img src="images/logo.png" alt="" class="logo"/></a>
+        <a href="index.html"><h1 class="sitenametext">Food Recipes</h1></a>
+        <a href="index.html"><img class="header-img" src="images/header-image.png" alt="Food Recipes"/></a>
+    </div>
+    <!-- end of header div -->
+
+    <span class="w-pet-border"></span>
+
+    <!-- NAVIGATION BAR STARTS HERE -->
+    <div id="nav-wrap">
+        <div class="inn-nav clearfix">
+
+            <!-- MAIN NAVIGATION STARTS HERE -->
+            <ul id="menu-main-navigation" class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Slider</a>
+                    <ul class="sub-menu">
+                        <li><a href="basic-slider.html">Basic Slider</a></li>
+                        <li><a href="nivo-slider.html">Nivo Slider</a></li>
+                        <li><a href="thumbnail-slider.html">Thumbnail Slider</a></li>
+                    </ul>
+                </li>
+                <li><a href="recipes-listing.html">Recipe listing</a>
+                    <ul class="sub-menu">
+                        <li><a href="recipe-single-1.html">Recipe Single one</a></li>
+                        <li><a href="recipe-single-2.html">Recipe Single two</a></li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="blog.html">Blog</a>
+                    <ul class="sub-menu">
+                        <li> <a href="single.html">Blog Single</a> </li>
+                    </ul>
+                </li>
+                <li><a href="about-us.html">About</a></li>
+
+                <li>
+                    <a href="chef-listing.html">Chef Listing</a>
+                    <ul class="sub-menu">
+                        <li><a href="author.html">Chef Single</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="features.html">Features</a>
+                    <ul class="sub-menu">
+                        <li><a href="author.html">Author</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="advance-search.html">Advance Search</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://themeforest.net/item/food-recipes-food-website-and-blog-template/1575003?ref=InspiryThemes">Buy Template</a>
+                </li>
+            </ul>
+            <!-- MAIN NAVIGATION ENDS HERE -->
+
+
+            <!-- SOCIAL NAVIGATION -->
+            <ul id="menu-social-menu" class="social-nav">
+                <li class="facebook"><a href="#"></a></li>
+                <li class="twitter"><a href="#"></a></li>
+                <li class="rss"><a href="#"></a></li>
+                <li class="flickr"><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of nav-wrap -->
+    <!-- NAVIGATION BAR ENDS HERE -->
+
+</div>
+<!-- end of header-wrapper div -->
+
+<!-- ============= HEADER ENDS HERE ============== -->
+
+
+<!-- ============= CONTAINER STARTS HERE ============== -->
+<div class="main-wrap">
+    <div id="container">
+        <!-- WEBSITE SEARCH STARTS HERE -->
+
+        <div class="top-search  clearfix">
+            <h3 class="head-pet"><span>Recipe Search</span></h3>
+
+            <form action="#" id="searchform">
+                <p>
+                    <input type="text" name="s" id="s" class="field" value="" placeholder="Search for"/>
+                    <input type="submit" name="s_submit" id="s-submit" value=""/>
+                </p>
+            </form>
+
+            <p class="statement"><span class="fireRed">Recipe Types:</span>
+                <a href="#">Beef</a> , <a href="#">Cheese</a> , <a href="#">Chicken</a> , <a href="#">Chocolate</a> , <a href="#">Fish</a> , <a href="#">Pizzas</a>, <a href="#">Potatos</a>, <a href="#">Rolls</a>
+            </p>
+
+        </div>
+        <!-- end of top-search div-->
+
+
+        <!-- ============= CONTENT AREA STARTS HERE ============== -->
+        <div id="content" class="clearfix ">
+            <div id="left-area" class="clearfix" itemscope itemtype="http://schema.org/Recipe">
+
+                <!-- Starting Default Loop -->
+
+                <h1 class="title fn" itemprop="name">Pesto Pizza With Roasted Garlic &#038; Potato</h1>
+                <span class="published">2013-02-06</span>
+
+                <!-- Recipe Categorization Information -->
+                <ul class="recipe-cat-info clearfix">
+                    <li> Cuisine: <a href="#" rel="tag">German</a> </li>
+                    <li> Course: <a href="#" rel="tag">Appetizer</a> </li>
+                    <li> Skill Level: <a href="#" rel="tag">Beginner</a> </li>
+                </ul>
+
+                <!-- Recipe Single Image -->
+                <div class="single-img-box ">
+                    <div class="single-slider cycle-slideshow " data-cycle-pager=".cycle-pager">
+                        <img itemprop="image" src="images/demo/PPRGP-575x262.jpg" alt="">
+                        <img itemprop="image" src="images/demo/PPRGP-575x262.jpg" alt="">
+                        <img itemprop="image" src="images/demo/PPRGP-575x262.jpg" alt="">
+                    </div>
+                    <div class="img-nav cycle-pager"></div>
+                </div>
+
+
+                <!-- Recipe Information -->
+                <ul class="recipe-info clearfix">
+                    <li class="yield">
+                        <strong class="name">Yield :</strong>
+                        <span class="value" itemprop="recipeYield">2 Pizzas</span>
+                    </li>
+                    <li class="servings">
+                        <strong class="name">Servings :</strong>
+                        <span class="value">4</span>
+                    </li>
+                    <li class="prep-time">
+                        <strong class="name">Prep Time :</strong>
+                        <span class="value"><meta itemprop="prepTime" content="PT35M">35</span>
+                    </li>
+                    <li class="cook-time">
+                        <strong class="name">Cook Time :</strong>
+                        <span class="value"><meta itemprop="cookTime" content="PT">60m</span>
+                    </li>
+                    <li class="ready-in">
+                        <strong class="name">Ready In :</strong>
+                        <span class="value">1:30 h</span>
+                    </li>
+                </ul>
+
+                <span class="w-pet-border"></span>
+
+                <div class="info-left instructions">
+
+                    <div itemprop="description">
+                        <h3 class="blue">Ingredients</h3>
+                        <ul>
+                            <li class="ingredient" itemprop="ingredients">24 ounces pizza dough, divided</li>
+                            <li class="ingredient" itemprop="ingredients">1/2 cup all-purpose flour, for dusting</li>
+                            <li class="ingredient" itemprop="ingredients">About 1 cup pesto</li>
+                            <li class="ingredient" itemprop="ingredients">2-3 cups grated mozzarella/provolone cheese</li>
+                            <li class="ingredient" itemprop="ingredients">1 cup roasted or confit garlic cloves</li>
+                            <li class="ingredient" itemprop="ingredients">4 red skinned potatoes, very thinly sliced</li>
+                            <li class="ingredient" itemprop="ingredients">1/2 teaspoon Italian seasoning</li>
+                            <li class="ingredient" itemprop="ingredients">Olive oil</li>
+                            <li class="ingredient" itemprop="ingredients">Kosher salt and freshly ground black pepper</li>
+                            <li class="ingredient" itemprop="ingredients">Crushed red pepper flakes</li>
+                        </ul>
+                        <h3 class="blue">Method</h3>
+                        <div>
+                            <h4 class="red me-steps"><span class="stepcheck"></span>Step 1</h4>
+                            <p class="instructions" itemprop="recipeInstructions">Place a pizza stone in the lower third of the oven and preheat to 500°.
+                                Allow the stone to heat for at least half an hour before baking pizzas.
+                            </p><h4 class="red me-steps">
+                            <span class="stepcheck"></span>Step 2</h4>
+                            <p class="instructions" itemprop="recipeInstructions">Allow the pizza dough to come to room temperature.
+                            On a lightly-floured work surface, form the dough into two large balls, collecting the sides and tucking them under to create a smooth outer surface.
+                                Cover the dough with a damp towel and allow to rest for at least 20 minutes.
+                            </p><h4 class="red me-steps">
+                            <span class="stepcheck"></span>Step 3</h4>
+                            <p class="instructions" itemprop="recipeInstructions">Meanwhile, blanch the potato slices in boiling water until just cooked through, anywhere between 1 – 2 minutes.  Drain and allow to cool slightly before drying the slices with paper towels and coating them with a touch of olive oil, a pinch of Italian seasoning and kosher salt.
+                            </p>
+                            <h4 class="red me-steps">
+                                <span class="stepcheck"></span>Step 4</h4>
+                            <p class="instructions" itemprop="recipeInstructions">Generously dust a wooden peel or the back of a sheet pan with flour or cornmeal. With lightly-floured hands, press the dough with your fingertips to form a flattened disk.  Lift the dough up and use the back of your knuckles to stretch and thin-out the dough into a circle with a diameter of 12-inches. Be careful to preserve the edge of the dough if you want a light, chewy crust. Carefully position the stretched dough onto the prepared peel or baking sheet.
+                            </p>
+                            <h4 class="red me-steps"> <span class="stepcheck"></span>Step 5</h4>
+                            <p class="instructions" itemprop="recipeInstructions">Using a large spoon, spread an even layer of the pesto onto the dough and carefully spread it to within 1/2-inch of the edge, being careful to leave a sauce free edge.  Top with an even layer of the grated mozzarella/provolone cheese followed by slices of parboiled potatoes and roasted garlic cloves.  Top with a light sprinkling of a bit more mozzarella, season with salt to taste and a pinch of red pepper flakes.  Lightly brush the exposed crust with a bit of olive oil (or leftover garlic) oil to promote browning.</p>
+                            <h4 class="red me-steps"><span class="stepcheck"></span>Step 6</h4>
+                            <p class="instructions" itemprop="recipeInstructions">Carefully slide the pizza onto the preheated stone and bake until the crust is crisped and golden and the cheese is bubbling and just beginning to brown, about 6-7 minutes.  Remove the pizza from the oven and allow it to rest for a few minutes before slicing.</p>
+                        </div>
+                        <p>&nbsp;</p>
+                    </div>
+
+                    <div class="recipe-tags clearfix">
+                        <span class="type"> Recipe Type: <a href="#" rel="tag">Pizzas</a></span>
+                        <span class="tags">Tags: <a href="#" rel="tag">garlic</a>,
+                            <a href="#" rel="tag">pizza</a>,
+                            <a href="#" rel="tag">potato</a>,
+                            <a href="#" rel="tag">roasted</a>
+                        </span>
+                        <span class="ingredient"> Ingredients:
+                            <a href="#" rel="tag">black pepper</a>,
+                            <a href="#" rel="tag">flour</a>,
+                            <a href="#" rel="tag">pesto</a>
+                        </span>
+                        <!-- Share Icons -->
+                        <div class="share">
+                            <a class="twitter" onclick="window.open('http://twitter.com/home?status=Pesto+Pizza+With+Roasted+Garlic+%26%23038%3B+Potato - http://www.960demo.com/foodrecipes-dev/recipe/pesto-pizza-with-roasted-garlic-potato/','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="http://twitter.com/home?status=Pesto+Pizza+With+Roasted+Garlic+%26%23038%3B+Potato%20-%20http://www.960demo.com/foodrecipes-dev/recipe/pesto-pizza-with-roasted-garlic-potato/" title="Pesto Pizza With Roasted Garlic &#038; Potato" target="960development"></a>
+                            <a class="facebook" onclick="window.open('http://www.facebook.com/share.php?u=http://www.960demo.com/foodrecipes-dev/recipe/pesto-pizza-with-roasted-garlic-potato/','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="http://www.facebook.com/share.php?u=http://www.960demo.com/foodrecipes-dev/recipe/pesto-pizza-with-roasted-garlic-potato/" title="Pesto Pizza With Roasted Garlic &#038; Potato"  target="960development"></a>
+                            <a class="google" href="https://m.google.com/app/plus/x/?v=compose&amp;content=Pesto+Pizza+With+Roasted+Garlic+%26%23038%3B+Potato%20-%20http://www.960demo.com/foodrecipes-dev/recipe/pesto-pizza-with-roasted-garlic-potato/" onclick="window.open('https://m.google.com/app/plus/x/?v=compose&amp;content=Pesto+Pizza+With+Roasted+Garlic+%26%23038%3B+Potato - http://www.960demo.com/foodrecipes-dev/recipe/pesto-pizza-with-roasted-garlic-potato/','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;"></a>
+                            <a class="print" href="javascript:window.print()" title="Print"></a>
+                            <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.960demo.com%2Ffoodrecipes-dev%2Frecipe%2Fpesto-pizza-with-roasted-garlic-potato%2F%26media=http://www.960demo.com/foodrecipes-dev/wp-content/uploads/2012/03/Pesto-Pizza-with-Roasted-Garlic-Potato2.jpg%26description=Pesto Pizza With Roasted Garlic &#038; Potato" class="pin-it-button" count-layout="none"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+                        </div>
+                    </div>
+
+                </div><!-- end of info-left div -->
+
+                <div class="info-right">
+
+                    <!-- Cook Info -->
+                    <div class="cookname" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        <div class="img-box">
+                            <a itemprop="url" class="imgc" href="#">
+                                <img class="auth-photo" src="images/demo/001-250x212.png" alt="admin" />
+                            </a>
+                            <div class="share"> </div>
+                        </div>
+                        <div class="cook-info author vcard">
+                            <h5 itemprop="name" class="fn given-name url">
+                                <a href="#" title="Posts by admin" rel="author">admin</a>
+                            </h5>
+                            <p itemprop="description" ></p>
+                            <a itemprop="url" class="url" href="#">More From This Chef &raquo;</a>
+                        </div>
+
+                    </div><!-- end of cookname div -->
+                    <!-- Rating Icons -->
+                    <div class="rate-box">
+
+                        <h6>Average Member Rating</h6>
+
+                        <p class="ex-rates">
+                            <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="off"></span>			(4.1 / 5)
+                        </p>
+
+                        <div class="hreview-aggregate">
+                            <span class="rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                                <span class="average">4.1</span>
+                                <span class="best" itemprop="ratingValue">5</span>
+                                <span class="count" itemprop="reviewCount">28</span>
+                            </span>
+                        </div>
+
+                        <form action="#" method="post" id="rate-product">
+                            <h6>Rate this recipe</h6>
+                            <p class="rates">
+                                <span class="off"></span>
+                                <span class="off"></span>
+                                <span class="off"></span>
+                                <span class="off"></span>
+                                <span class="off"></span>
+                                <input type="hidden" name="selected_rating" id="selected_rating" value="" />
+                                <input type="hidden" name="post_id" value="25" />
+                                <input type="hidden" name="action" value="rate_this" />
+                            </p>
+                        </form>
+                        <p id="output"></p>
+                        <p class="status"><span>28 people</span> rated this recipe</p>
+                        <p class="views">146</p>
+
+                    </div><!-- end of rate-box div -->
+                    <!-- Including More Recipes part -->
+                    <div class="more-recipe">
+                        <h5>Related Recipes:</h5>
+                        <div class="recipe-imgs">
+                            <div class="more-recipes">
+                                <ul class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-slides="li" data-cycle-prev=".p-17" data-cycle-next=".n-17" style="overflow: hidden;">
+                                    <li class="cycle-slide cycle-sentinel">
+                                        <a href="#">
+                                            <img width="222" height="144" src="images/demo/Pimento-Cheese-Potato-Skins2-222x144.jpg" alt="Pimento-Cheese-Potato-Skins">
+                                        </a>
+                                        <p class="info-box">Pimento Cheese Potato Skins</p>
+                                    </li>
+                                    <li class="cycle-slide">
+                                        <a href="#">
+                                            <img width="222" height="144" src="images/demo/Jalapeno-Poppers1-222x144.jpg" alt="Jalapeño-Poppers">
+                                        </a>
+                                        <p class="info-box">Jalapeno Poppers</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="prev p-17"></span>
+                            <span class="next n-17"></span>
+                        </div><!-- end of recipe-imgs div -->
+                    </div>
+
+                    <!-- Including Nutritional Info part -->
+                    <div class="nutritional" itemprop="nutrition" itemscope itemtype="http://schema.org/NutritionInformation">
+                        <h3>Nutritional Info</h3>
+                        <p itemprop="description">This information is per serving.</p>
+                        <ul>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Protein</p>
+                                <span class="value">6.60g</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Dietary Fibre</p>
+                                <span class="value">50g</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Fat Total</p>
+                                <span class="value">50g</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Energy</p>
+                                <span class="value">70g</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Fat Saturated</p>
+                                <span class="value">90g</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Sodium</p>
+                                <span class="value">800mg</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Carbohydrate</p>
+                                <span class="value">10g</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Cholesterol</p>
+                                <span class="value">55.50g</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- end of info-right div -->
+
+
+                <span class="w-pet-border"></span>
+
+
+                <!-- Default Comments -->
+                <div class="comments">
+
+                    <!-- You can start editing here. -->
+                    <!-- If comments are open, but there are no comments. -->
+
+                    <div id="respond" class="comment-respond">
+                        <h3 id="reply-title" class="comment-reply-title">
+                            Leave a Reply
+                            <small>
+                                <a rel="nofollow" id="cancel-comment-reply-link" href="#" style="display:none;">Cancel reply</a>
+                            </small>
+                        </h3>
+                        <form action="#" method="post" id="commentform" class="comment-form">
+                            <p class="logged-in-as">Logged in as <a href="#">admin</a>.
+                                <a href="images/demo/001-250x212.png" title="Log out of this account">Log out?</a>
+                            </p>
+                            <p class="comment-form-comment">
+                                <label for="comment">Comment</label>
+                                <textarea id="comment" name="comment" cols="45" rows="8" aria-describedby="form-allowed-tags" aria-required="true"></textarea>
+                            </p>
+                            <p class="form-allowed-tags" id="form-allowed-tags">
+                                You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:
+                                <code>
+                                    &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt;
+                                </code>
+                            </p>
+                            <p class="form-submit">
+                                <input name="submit" type="submit" id="submit" class="submit" value="Post Comment" />
+                                <input type='hidden' name='comment_post_ID' value='25' id='comment_post_ID' />
+                                <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                            </p>
+                        </form>
+                    </div><!-- #respond -->
+                </div><!-- end of comments div -->
+
+            </div><!-- end of left-area -->
+            <!-- LEFT AREA ENDS HERE -->
+            <div id="sidebar">
+                <div class="widget fav-recipes nostylewt">
+                    <h2 class="w-bot-border"><span>MISC</span> Recipes</h2>
+
+                    <div class="tabed">
+                        <ul class="tabs clearfix">
+                            <li class="current">Recent<span></span></li>
+                            <li>Popular<span></span></li>
+                            <li>Random<span></span></li>
+                        </ul>
+                        <div class="block current">
+                            <ul class="highest">
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/7a0a46455c4ec56a5a02c097374fc513-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="7a0a46455c4ec56a5a02c097374fc513" style="opacity: 1;"></a>
+                                    <h5> <a href="recipe-single-1.html">Chocolate Earl Grey Pots de Creme Recipe</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.3 / 5)
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/Pesto-Pizza-with-Roasted-Garlic-Potato2-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Pesto-Pizza-with-Roasted-Garlic-Potato2" style="opacity: 1;"></a>
+                                    <h5> <a href="recipe-single-1.html">Pesto Pizza With Roasted Garlic &amp; Potato</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.1 / 5)
+                                    </p>
+                                </li>
+                                <li style="padding: 0px; margin: 0px; background: none;">
+                                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/Pimento-Cheese-Potato-Skins-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Pimento-Cheese-Potato-Skins" style="opacity: 1;"></a>
+                                    <h5>
+                                        <a href="recipe-single-1.html">Pimento Cheese Potato Skins</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.4 / 5)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end of block div -->
+                        <div class="block">
+                            <ul class="highest">
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box">
+                                        <img src="images/demo/Goat-Cheese-Chorizo-Rolls2-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Goat-Cheese-Chorizo-Rolls2">
+                                    </a>
+                                    <h5> <a href="recipe-single-1.html">Goat Cheese and Chorizo Rolls</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.3 / 5)
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box">
+                                        <img src="images/demo/Pimento-Cheese-Potato-Skins-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Pimento-Cheese-Potato-Skins">
+                                    </a>
+                                    <h5> <a href="recipe-single-1.html">Pimento Cheese Potato Skins</a></h5>
+
+                                    <p class="rate"> <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.4 / 5)
+                                    </p>
+                                </li>
+                                <li style="padding: 0px; margin: 0px; background: none;">
+                                    <a href="recipe-single-1.html" class="img-box">
+                                        <img src="images/demo/Warm-Marinated-Flank-Steak-Salad-1-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Warm-Marinated-Flank-Steak-Salad-1">
+                                    </a>
+                                    <h5> <a href="recipe-single-1.html">Warm Flank Steak Salad With Mint And Cilantro</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        ( 4.2 / 5)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end of block div -->
+                        <div class="block">
+                            <ul class="highest">
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/Goat-Cheese-Chorizo-Rolls2-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Goat-Cheese-Chorizo-Rolls2"></a>
+                                    <h5> <a href="recipe-single-1.html">Goat Cheese and Chorizo Rolls</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.3 / 5)
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/Jalapeno-Poppers-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="Jalapeño-Poppers"></a>
+                                    <h5><a href="http://www.960demo.com/foodrecipes-dev/recipe/jalapeno-poppers/">Jalapeno Poppers</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.4 / 5)
+                                    </p>
+                                </li>
+                                <li style="padding: 0px; margin: 0px; background: none;">
+                                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/7a0a46455c4ec56a5a02c097374fc513-63x53.jpg" class="attachment-sidebar-tabs wp-post-image" alt="7a0a46455c4ec56a5a02c097374fc513"></a>
+                                    <h5> <a href="recipe-single-1.html">Chocolate Earl Grey Pots de Creme Recipe</a></h5>
+
+                                    <p class="rate">
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="on"></span>
+                                        <span class="off"></span>
+                                        (4.3 / 5)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end of block div -->
+                        <div class="bot-border"></div>
+                    </div>
+                    <!-- end of tabed div -->
+                </div>
+                <div id="recipes-from-recipe-type-2" class="widget nostylewt Recipes_from_Recipe_Type clearfix">
+                    <div class="recipes-slider-widget rt">
+                        <h2 class="w-bot-border"><span>Pizzas</span> &amp; Rolls</h2>
+                        <ul class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-slides="li" data-cycle-next=".nrecipes-from-recipe-type-2" data-cycle-prev=".precipes-from-recipe-type-2">
+                            <li class="cycle-slide cycle-sentinel">
+                                <a href="#">
+                                    <img src="images/demo/Pesto-Pizza-with-Roasted-Garlic-Potato21-302x196.jpg" class="attachment-recipe-slider-widget wp-post-image" alt="Pesto-Pizza-with-Roasted-Garlic-Potato2">                                </a>
+                                <p class="info-box">Pesto Pizza With Roasted Garlic &amp; Potato</p>
+                            </li>
+                            <li class="cycle-slide">
+                                <a href="#">
+                                    <img src="images/demo/Pesto-Pizza-with-Roasted-Garlic-Potato21-302x196.jpg" class="attachment-recipe-slider-widget wp-post-image" alt="Pesto-Pizza-with-Roasted-Garlic-Potato2">                                </a>
+                                <p class="info-box">Pesto Pizza With Roasted Garlic &amp; Potato</p>
+                            </li>
+                            <li class="cycle-slide cycle-slide-active">
+                                <a href="#">
+                                    <img src="images/demo/Goat-Cheese-Chorizo-Rolls21-302x196.jpg" class="attachment-recipe-slider-widget wp-post-image" alt="Goat-Cheese-Chorizo-Rolls2">                                </a>
+                                <p class="info-box">Goat Cheese and Chorizo Rolls</p>
+                            </li>
+                        </ul>
+                        <span class="prev precipes-from-recipe-type-2 cycle-prev"></span>
+                        <span class="next nrecipes-from-recipe-type-2 cycle-next"></span>
+                    </div>
+                </div>
+                <div class="widget newsEvent nostylewt">
+                    <h2 class="w-bot-border">
+                        <span>News</span> and Events</h2>
+                    <ul class="list">
+                        <li>
+                            <h5><a href="single.html">Hello world!</a></h5>
+                            <p>Welcome to WordPress. This is your first post. Edit or delete it,...<a href="single.html">more</a></p>
+                        </li>
+                        <li>
+                            <h5> <a href="single.html">Best Bread pairing for Barbeque?</a></h5>
+                            <p>Quis sed mid elit, risus aliquet placerat. Pid et, vel phasellus augue...<a href="single.html">more</a> </p>
+                        </li>
+                        <li>
+                            <h5> <a href="single.html">baking question</a></h5>
+                            <p>Quis sed mid elit, risus aliquet placerat. Pid et, vel phasellus augue...<a href="single.html">more</a> </p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="recipe_types-2" class="widget nostylewt Recipe_Types_Widget clearfix"><h2 class="w-bot-border bmarginless"><span>Recipe</span> Types</h2><div class="archives clearfix">
+                    <ul>	<li class="cat-item cat-item-31"><a href="http://inspirythemesdemo.com/alt-foodrecipes/recipe-type/cheese-2/">Cheese</a>
+                    </li>
+                        <li class="cat-item cat-item-33"><a href="#">Chicken</a>
+                        </li>
+                        <li class="cat-item cat-item-36"><a href="#">Chocolate</a>
+                        </li>
+                        <li class="cat-item cat-item-50"><a href="#">Pizzas</a>
+                        </li>
+                        <li class="cat-item cat-item-52"><a href="#">Potatos</a>
+                        </li>
+                        <li class="cat-item cat-item-53"><a href="#">Rolls</a>
+                        </li>
+                    </ul>
+                </div><!-- end of fav-recipes widget --></div>
+            </div>
+        </div><!-- end of content div -->
+        <div class="bot-ads-area">
+            <div class="ads-642x79">
+                <a href="#"><img src="images/ad-652x95.png" alt="Recipe Ads" /></a>
+            </div>
+        </div>
+        <!-- CONTENT ENDS HERE -->
+
+    </div><!-- end of container div -->
+</div>
+<div class="w-pet-border"></div>
+<!-- ============= CONTAINER AREA ENDS HERE ============== -->
+
+
+<!-- ============= BOTTOM AREA STARTS HERE ============== -->
+<div id="bottom-wrap">
+    <ul id="bottom" class="clearfix">
+
+        <li class="about">
+            <a href="about-us.html"><img  src="images/footer-logo.png" alt="Food Recipes" class="footer-logo"/></a>
+            <p>Donec sollicitudin molestie malesuada. Proin eget tortor risus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. ...</p>
+            <a href="about-us.html" class="readmore">Read more About Us</a>
+        </li>
+
+        <li id="recent_recipe_footer_widget-3" class="Recent_Recipe_Footer_Widget"><h2 class="w-bot-border">
+            <span>Recent</span> Recipes</h2>
+            <ul class="recent-posts nostylewt">
+                <li class="clearfix">
+                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/7a0a46455c4ec56a5a02c097374fc513-63x53.jpg" class="attachment-most-rated-thumb wp-post-image" alt="7a0a46455c4ec56a5a02c097374fc513"/></a>
+                    <h5> <a href="recipe-single-1.html">Chocolate Earl Grey Pots de...</a></h5>
+                    <p>2 cups cream 120 grams dark chocolate, chopped 2 bags...</p>
+                </li>
+                <li class="clearfix">
+                    <a href="recipe-single-1.html" class="img-box"><img  src="images/demo/Pesto-Pizza-with-Roasted-Garlic-Potato2-63x53.jpg" class="attachment-most-rated-thumb wp-post-image" alt="Pesto-Pizza-with-Roasted-Garlic-Potato2"/></a>
+                    <h5> <a href="recipe-single-1.html">Pesto Pizza With Roasted Garlic...</a></h5>
+                    <p>Mention potatoes on pizza and you’ll get one of two...</p>
+                </li>
+            </ul>
+        </li>
+        <li id="displaytweetswidget-3" class="widget_displaytweetswidget"><h2>Inspiry Themes</h2>
+            <p>Check out 'Cream - Sweets and Bakers WordPress Theme' on <a href="http://www.twitter.com/EnvatoMarket" target="_blank">@EnvatoMarket</a> by <a href="http://www.twitter.com/InspiryThemes" target="_blank">@InspiryThemes</a> <a href="http://twitter.com/search?q=%23themeforest&src=hash" target="_blank">#themeforest</a> <a href="http://t.co/we8M81zKf0" target="_blank">http://t.co/we8M81zKf0</a><br/>
+                <small class="muted">- Thursday Nov 6 - 7:25am</small>
+            </p>
+            <p>Data Sanitization and Validation With WordPress <a href="http://t.co/AJJoOERrwp" target="_blank">http://t.co/AJJoOERrwp</a> via <a href="http://www.twitter.com/tutsplus" target="_blank">@tutsplus</a><br/><small class="muted">- Sunday Nov 2 - 8:02am</small></p>
+        </li>
+
+    </ul>
+    <!-- end of bottom div -->
+</div>
+<!-- end of bottom-wrap div -->
+<!-- ============= BOTTOM AREA ENDS HERE ============== -->
+
+
+<!-- ============= FOOTER STARTS HERE ============== -->
+
+<div id="footer-wrap">
+    <div id="footer">
+        <p class="copyright">Copyright &copy; 2016, Food Recipes - A Premium HTML Template</p>
+        <p class="dnd">Developed by <a href="http://themeforest.net/user/inspirythemes">Inspiry Themes</a></p>
+    </div>
+    <!-- end of footer div -->
+</div>
+<!-- end of footer-wrapper div -->
+
+<!-- ============= FOOTER STARTS HERE ============== -->
+<script type='text/javascript' src='js/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='js/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='js/jquery.validate.min.js?ver=1.11.1'></script>
+<script type='text/javascript' src='js/jquery.form.min.js?ver=3.48.0'></script>
+<script type='text/javascript' src='js/jquery.easing.1.3.js?ver=1.3'></script>
+<script type='text/javascript' src='js/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.3'></script>
+<script type='text/javascript' src='js/jquery.cycle2.js?ver=2.0130909'></script>
+<script type='text/javascript' src='js/nivo-slider/jquery.nivo.slider.js?ver=2.7.1'></script>
+<script type='text/javascript' src='js/accordion-slider.js?ver=1.0'></script>
+<script type='text/javascript' src='js/jquery-ui.min.js?ver=1.10.2'></script>
+<script type='text/javascript' src='js/select2.full.min.js?ver=4.0'></script>
+<script type='text/javascript' src='js/script.js?ver=1.0'></script>
+
+</body>
+</html>
