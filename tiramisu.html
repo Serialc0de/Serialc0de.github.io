@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/favicon.png"/>
+
+    <!-- Font Files -->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    <title>Tiramisù</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css"/>
+    <link rel='stylesheet' id='nivoslider-css' href='js/nivo-slider/nivo-slider.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='prettyPhoto-css' href='js/prettyPhoto/css/prettyPhoto.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='plupload_css-css' href='js/jquery.ui.plupload/css/jquery.ui.plupload.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='select2-css' href='css/select2.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='font-awesome-css' href='css/font-awesome.min.css?ver=4.1.1' type='text/css' media='all'/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all"/>
+    <link rel='stylesheet' id='responsive-css' href='responsive.css?ver=4.1.1' type='text/css' media='all'/>
+
+</head>
+
+<body>
+
+<!-- ============= HEADER STARTS HERE ============== -->
+<div id="header-wrapper" class="clearfix">
+    <div id="header" class="clearfix">
+        <!-- WEBSITE LOGO -->
+        <a class="responsive_logo" href="index.html"><img src="images/logo.png" alt="" class="logo"/></a>
+        <a href="index.html"><h1 class="sitenametext">Food Recipes</h1></a>
+        <a href="index.html"><img class="header-img" src="images/header-image.png" alt="Food Recipes"/></a>
+    </div>
+    <!-- end of header div -->
+
+    <span class="w-pet-border"></span>
+
+    <!-- NAVIGATION BAR STARTS HERE -->
+    <div id="nav-wrap">
+        <div class="inn-nav clearfix">
+
+            <!-- MAIN NAVIGATION STARTS HERE -->
+            <ul id="menu-main-navigation" class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Slider</a>
+                    <ul class="sub-menu">
+                        <li><a href="basic-slider.html">Basic Slider</a></li>
+                        <li><a href="nivo-slider.html">Nivo Slider</a></li>
+                        <li><a href="thumbnail-slider.html">Thumbnail Slider</a></li>
+                    </ul>
+                </li>
+                <li><a href="recipes-listing.html">Recipe listing</a>
+                    <ul class="sub-menu">
+                        <li><a href="recipe-single-1.html">Recipe Single one</a></li>
+                        <li><a href="recipe-single-2.html">Recipe Single two</a></li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="blog.html">Blog</a>
+                    <ul class="sub-menu">
+                        <li> <a href="single.html">Blog Single</a> </li>
+                    </ul>
+                </li>
+                <li><a href="about-us.html">About</a></li>
+
+                <li>
+                    <a href="chef-listing.html">Chef Listing</a>
+                    <ul class="sub-menu">
+                        <li><a href="author.html">Chef Single</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="features.html">Features</a>
+                    <ul class="sub-menu">
+                        <li><a href="author.html">Author</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="advance-search.html">Advance Search</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- MAIN NAVIGATION ENDS HERE -->
+
+
+            <!-- SOCIAL NAVIGATION -->
+            <ul id="menu-social-menu" class="social-nav">
+                <li class="facebook"><a href="#"></a></li>
+                <li class="twitter"><a href="#"></a></li>
+                <li class="rss"><a href="#"></a></li>
+                <li class="flickr"><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of nav-wrap -->
+    <!-- NAVIGATION BAR ENDS HERE -->
+
+</div>
+<!-- end of header-wrapper div -->
+
+<!-- ============= HEADER ENDS HERE ============== -->
+
+
+<!-- ============= CONTAINER STARTS HERE ============== -->
+<div class="main-wrap">
+    <div id="container">
+        <!-- WEBSITE SEARCH STARTS HERE -->
+
+        <div class="top-search  clearfix">
+            <h3 class="head-pet"><span>Trova Ricette</span></h3>
+
+            <form action="#" id="searchform">
+                <p>
+                    <input type="text" name="s" id="s" class="field" value="" placeholder="Search for"/>
+                    <input type="submit" name="s_submit" id="s-submit" value=""/>
+                </p>
+            </form>
+
+            <p class="statement"><span class="fireRed">Tipo Ricette:</span>
+                <a href="#">Beef</a> , <a href="#">Cheese</a> , <a href="#">Chicken</a> , <a href="#">Chocolate</a> , <a href="#">Fish</a> , <a href="#">Pizzas</a>, <a href="#">Potatos</a>, <a href="#">Rolls</a>
+            </p>
+
+        </div>
+        <!-- end of top-search div-->
+
+
+        <!-- ============= CONTENT AREA STARTS HERE ============== -->
+        <div id="content" class="clearfix ">
+            <div id="left-area" class="clearfix full-wide" itemscope itemtype="http://schema.org/Recipe">
+                <!-- Starting Default Loop -->
+
+                <h1 class="title fn" itemprop="name" >Tiramisù</h1>
+                <!-- for Schema.org microdata -->
+                <span class="published">2020-03-20</span>
+
+                <!-- Recipe Categorization Information -->
+                <ul class="recipe-cat-info clearfix">
+                    <li>
+                        <span itemscope="recipeCuisine">Cucina: <a href="#" rel="tag">Italiana</a></span>
+                    </li>
+                    <li>
+                        Course: <a href="#" rel="tag">Dolci</a>
+                    </li>
+                    <li itemscope="typicalAgeRange">
+                        Difficoltà: <a href="#" rel="tag">Facile</a>
+                    </li>
+                </ul>
+
+                <div class="single-imgs">
+
+                    <div class="single-img-box">
+                        <div class="recipe-single-img">
+                            <a data-rel="none" title="Tiramisu">
+                                <img width="575" height="262" src="images/demo/tiramisu.jpg" class="photo" alt="" itemprop="image" /></a>
+                        </div>
+                    </div>
+
+                    <div id="horiz_container_outer" class="small-img-cont">
+                        <ul id="horiz_container" class="small-imgs">
+                            <li>
+                                <a data-rel="images/demo/tiramisu.jpg" data-ppurl="images/demo/pizzetterosse.webp" data-ppcaption="" rel="images/demo/pizzetterosse.webp">
+                                    <img src="images/demo/rolls1.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a data-rel="images/demo/GCCR31-575x262.jpg" data-ppurl="images/demo/GCCR31-575x262.jpg" data-ppcaption="" rel="images/demo/GCCR31-575x262.jpg">
+                                    <img src="images/demo/rolls2.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a data-rel="images/demo/GCCR1-575x262.jpg" data-ppurl="images/demo/GCCR1-575x262.jpg" data-ppcaption="" rel="images/demo/GCCR1-575x262.jpg">
+                                    <img src="images/demo/rolls3.jpg" alt="">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a data-rel="images/demo/GCCR41-575x262.jpg" data-ppurl="images/demo/GCCR1-575x262.jpg" data-ppcaption="" rel="images/demo/GCCR41-575x262.jpg">
+                                    <img src="images/demo/rolls4.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a data-rel="images/demo/GCCR1-575x262.jpg" data-ppurl="images/demo/GCCR1-575x262.jpg" data-ppcaption="" rel="images/demo/GCCR1-575x262.jpg">
+                                    <img src="images/demo/rolls5.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a data-rel="images/demo/PPRGP-575x262.jpg" data-ppurl="images/demo/PPRGP-575x262.jpg" data-ppcaption="" rel="images/demo/PPRGP-575x262.jpg">
+                                    <img src="images/demo/rolls6.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="carnav">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Recipe Information -->
+                <ul class="recipe-info clearfix">
+                    <li class="yield">
+                        <strong class="name">Yield :</strong>
+                        <span class="value" itemprop="recipeYield">2 Pizzas</span>
+                    </li>
+                    <li class="servings">
+                        <strong class="name">Porzioni :</strong>
+                        <span class="value">4</span>
+                    </li>
+                    <li class="prep-time">
+                        <strong class="name">Preparazione :</strong>
+                        <span class="value">35</span>
+                    </li>
+                    <li class="cook-time">
+                        <strong class="name">Cottura :</strong>
+                        <span class="value">60m</span>
+                    </li>
+                    <li class="ready-in">
+                        <strong class="name">Pronto in :</strong>
+                        <span class="value">1:30 h</span>
+                    </li>
+                </ul>
+
+                <span class="w-pet-border"></span>
+
+                <div class="info-left instructions" itemprop="about">
+                  <h2 class="gz-title-section gz-underline gz-mBottom2x gzSpeakerAncora">PRESENTAZIONE</h2>
+                  Anticamente le nonne usavano preparare una colazione che oggi potremmo definire povera, ma che all’epoca era davvero ricchissima! Ancora oggi la ricetta è immutata, basta rompere in un bicchiere un uovo freschissimo e sbatterlo con dello zucchero e a piacere aggiungere caffè o latte caldo, per i più piccoli, e marsala o anice per i più grandicelli. Ed è proprio da questa portentosa crema che nasce la crema al mascarpone base del tiramisù. Il dolce italiano per eccellenza, quello più famoso e amato, ma soprattutto che ha dato vita a tantissime altre versioni! Le più apprezzate? Sicuramente il tiramisù alle fragole o quello alla Nutella, giusto per citarne qualcuno! Senza contare le rivisitazioni più raffinate come la crostata morbida o la torta al tiramisù.
+Sebbene le origini di questo famoso dessert non siano chiare, perché contese tra le regioni del Veneto, Friuli Venezia Giulia, Piemonte e Toscana, resta comunque un caposaldo della cucina italiana preparato indistintamente da Nord a Sud.
+Purtroppo non abbiamo scoperto chi l’ha inventato ma sicuramente sappiamo come farvi preparare uno dei più buoni tiramisù che abbiate mai preparato. Perciò ecco la ricetta: preparatelo anche voi e fateci sapere!
+                <p>&nbsp;</p>
+                    <div itemprop="description">
+                        <h3 class="blue">INGREDIENTI</h3>
+                    <dt class="gz-title-ingredients gz-uppercase">INGREDIENTI PER TIRAMISU'</dt>
+                        <ul>
+                            <li class="ingredient" itemprop="ingredients"><a href="#" rel="tag">Savoiardi</a> 300 g</li>
+                            <li class="ingredient" itemprop="ingredients">Uova freschissime (circa 4 medie) 220 g</li>
+                            <li class="ingredient" itemprop="ingredients">Mascarpone 500 g</li>
+                            <li class="ingredient" itemprop="ingredients">Zucchero 100 g</li>
+                            <li class="ingredient" itemprop="ingredients">Caffè della moka già pronto (e zuccherato a piacere) 300 g</li>
+                            <li class="ingredient" itemprop="ingredients">Cacao amaro in polvere per la superficie q.b.</li>
+                        </ul>
+                        <h3 class="blue">PREPARAZIONE</h3>
+                        <h2 class="gz-subtitle-section gz-uppercase gz-mBottom2x">COME PREPARARE IL TIRAMISU'</h2>
+                        <div>
+                            <h4 class="red me-steps"><span class="stepcheck"></span>Step 1</h4>
+
+                            <p class="instructions" itemprop="recipeInstructions">1.Per preparare le pizzette rosse come prima cosa versate la farina in una ciotola, insieme al lievito di birra fresco sbriciolato 2. Aggiungete poi l'acqua a temperatura ambiente 3. e mescolate con un mestolo di legno</p>
+                                <img src="images/demo/pizzette-rosse-step1.jpg" alt="">
+                            <h4 class="red me-steps"><span class="stepcheck"></span>Step 2</h4>
+
+                            <p class="instructions" itemprop="recipeInstructions">Lay a sheet of phyllo on a clean, dry work surface and brush it with melted butter. Top with two
+                                more sheets, lightly buttering each as you go. Cut the layered phyllo into six long rectangles. Place one tablespoon of the goat cheese filling at
+                                the base of each rectangle and roll up the phyllo, folding in the sides as you go. Repeat twice more to make 18 rolls total.</p>
+                            <h4 class="red me-steps"><span class="stepcheck"></span>Step 3</h4>
+
+                            <p class="instructions" itemprop="recipeInstructions">Place the rolls on the prepared baking sheets and brush the rolls with butter; bake for 10
+                                minutes, or until golden. Serve hot with chimichurri rojo for dipping.</p>
+                        </div>
+                    </div>
+                       <h3 class="blue">CURIOSITA'</h3>
+                       <p>Le origini del Tiramisù sono molto incerte perché ogni regione vorrebbe aver "inventato" questa prelibatezza: per questo motivo è nata una sorta di contesa tra Toscana, Piemonte, Friuli Venezia Giulia e Veneto. Moltissime sono le leggende legate a questo dolce a cui vennero attribuite addirittura qualità afrodisiache. La versione ufficiale colloca la nascita del tiramisù nel XVII secolo a Siena quando alcuni pasticceri, in vista dell'arrivo del Granduca di Toscana Cosimo de Medici, decisero di preparare un dolce per celebrare la sua grandezza. Decisero così che il dolce doveva rispecchiare la personalità del Granduca: doveva quindi essere un dolce importante e gustoso ma allo stesso tempo preparato con ingredienti semplici e, cosa importante, doveva essere estremamente goloso poiché Cosimo amava letteralmente i dolci. Così fu realizzato il nostro Tiramisù che all'epoca era chiamato "zuppa del duca" proprio in onore di Cosimo de Medici che portò con se la ricetta a Firenze facendola conoscere in tutta Italia. La leggenda racconta inoltre, che la zuppa del duca divenne il dolce preferito dai nobili che gli attribuivano proprietà afrodisiache ed eccitanti: da qui il nome Tiramisù. La versione non ufficiale, invece, narra che a inventare il Tiramisù sia stato un pasticcere torinese in onore di Camillo Benso conte di Cavour per sostenerlo nella sua difficile impresa di unificare l'Italia. Anche il Veneto ha una sua versione in merito: sembra che il tiramisù sia stato inventato nel ristorante "el Toulà" di Treviso situato all'epoca nei pressi di una casa chiusa e servito appunto per "tirare su" .</p>
+                       <h3 class="blue">CONSERVAZIONE</h3>
+                       <p>Potete conservare il tiramisu' un paio di giorni al massimo ben coperto in frigorifero.Si può congelare per circa 2 settimane in freezer.</p>
+                       <h3 class="blue">CONSIGLIO</h3>
+                       <p>Se preferite, potete aggiungere a piacimento del cioccolato fondente a scaglie o delle gocce di cioccolato.</p>
+                    <div class="recipe-tags clearfix">
+                        <span class="type" itemprop="recipeCategory"> Recipe Type: <a href="" rel="tag">Cheese</a>, <a href="" rel="tag">Potatos</a>, <a href="" rel="tag">Rolls</a></span>
+                        <span class="tags">Tags: <a href="" rel="tag">cheese</a>, <a href="" rel="tag">goat</a> </span>
+                        <span class="ingredient"> Ingredienti: <a href="" rel="tag">black pepper</a>, <a href="" rel="tag">butter</a>, <a href="" rel="tag">cheese</a></span>
+                        <!-- Share Icons -->
+                        <div class="share">
+                            <a class="twitter" onclick="window.open('http://twitter.com/home?status=Goat+Cheese+and+Chorizo+Rolls - http://inspirythemesdemo.com/alt-foodrecipes/recipe/goat-cheese-and-chorizo-rools/','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="http://twitter.com/home?status=Goat+Cheese+and+Chorizo+Rolls%20-%20http://inspirythemesdemo.com/alt-foodrecipes/recipe/goat-cheese-and-chorizo-rools/" title="Goat Cheese and Chorizo Rolls" target="960development"></a>
+                            <a class="facebook" onclick="window.open('http://www.facebook.com/share.php?u=http://inspirythemesdemo.com/alt-foodrecipes/recipe/goat-cheese-and-chorizo-rools/','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="http://www.facebook.com/share.php?u=http://inspirythemesdemo.com/alt-foodrecipes/recipe/goat-cheese-and-chorizo-rools/" title="Goat Cheese and Chorizo Rolls" target="960development"></a>
+                            <a class="google" href="https://m.google.com/app/plus/x/?v=compose&amp;content=Goat+Cheese+and+Chorizo+Rolls%20-%20http://inspirythemesdemo.com/alt-foodrecipes/recipe/goat-cheese-and-chorizo-rools/" onclick="window.open('https://m.google.com/app/plus/x/?v=compose&amp;content=Goat+Cheese+and+Chorizo+Rolls - http://inspirythemesdemo.com/alt-foodrecipes/recipe/goat-cheese-and-chorizo-rools/','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;"></a>
+                            <a class="print" href="javascript:window.print()" title="Print"></a>
+                            <a class="PIN_1445020290701_pin_it_button_20 PIN_1445020290701_pin_it_button_en_20_gray PIN_1445020290701_pin_it_button_inline_20 PIN_1445020290701_pin_it_none" data-pin-href="//www.pinterest.com/pin/create/button/?guid=JxbcWcteoSDP-1&amp;url=http%3A%2F%2Finspirythemesdemo.com%2Falt-foodrecipes%2Frecipe%2Fgoat-cheese-and-chorizo-rools%2F%3Fvar%3D2&amp;media=&amp;description=Goat%20Cheese%20and%20Chorizo%20Rolls%20%7C%20Food%20Recipes" data-pin-log="button_pinit"></a>
+                        </div>
+                    </div>
+
+                    <span class="w-pet-border"></span>
+
+                    <div class="comments">
+
+                        <!-- You can start editing here. -->
+                        <!-- If comments are open, but there are no comments. -->
+
+                        <div id="respond" class="comment-respond">
+                            <h3 id="reply-title" class="comment-reply-title">lascia un commento <small>
+                                <a rel="nofollow" id="cancel-comment-reply-link" href="#">Cancella commento</a></small></h3>
+                            <form action="#" method="post" id="commentform" class="comment-form">
+                                <p class="logged-in-as">Logged in as <a href="3">admin</a>.
+                                    <a href="#" title="Log out of this account">Log out?</a></p>
+                                <p class="comment-form-comment">
+                                    <label for="comment">Commento</label>
+                                    <textarea id="comment" name="comment" cols="45" rows="8" aria-describedby="form-allowed-tags" aria-required="true"></textarea>
+                                </p>
+                                <p class="form-submit">
+                                    <input name="submit" type="submit" id="submit" class="submit" value="Post Comment" />
+                                </p>
+                            </form>
+                        </div><!-- #respond -->
+                    </div><!-- end of comments div -->
+
+                </div><!-- end of info-left div -->
+
+                <div class="info-right">
+
+                    <!-- Cook Info -->
+                    <div class="cookname" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        <div class="img-box">
+                            <a itemprop="url" class="imgc" href="#">
+                                <img class="auth-photo" src="images/demo/001-250x212.png" alt="admin" />
+                            </a>
+                            <div class="share">
+                            </div>
+                        </div>
+                        <div class="cook-info author vcard">
+                            <h5 itemprop="name" class="fn given-name url"><a href="#" title="Posts by admin" rel="author">admin</a></h5>
+                            <p itemprop="description" ></p>
+                            <a itemprop="url" class="url" href="#">More From This Chef &raquo;</a>
+                        </div>
+
+                    </div><!-- end of cookname div -->
+                    <!-- Rating Icons -->
+                    <div class="rate-box">
+
+                        <h6>Valutazione Media dei Membri</h6>
+
+                        <p class="ex-rates">
+                            <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="off"></span>			(4.1 / 5)
+                        </p>
+
+                        <div class="hreview-aggregate">
+                        <span class="rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                            <span class="average">4.1</span>
+                            <span class="best" itemprop="ratingValue">5</span>
+                            <span class="count" itemprop="reviewCount">28</span>
+                        </span>
+                        </div>
+
+                        <form action="#" method="post" id="rate-product">
+                            <h6>Valuta questa ricetta</h6>
+                            <p class="rates">
+                                <span class="off"></span>
+                                <span class="off"></span>
+                                <span class="off"></span>
+                                <span class="off"></span>
+                                <span class="off"></span>
+                                <input type="hidden" name="selected_rating" id="selected_rating" value="" />
+                                <input type="hidden" name="post_id" value="25" />
+                                <input type="hidden" name="action" value="rate_this" />
+                            </p>
+                        </form>
+                        <p id="output"></p>
+                        <p class="status"><span>28 persone</span> hanno valutato questa ricetta</p>
+                        <p class="views">154</p>
+
+                    </div><!-- end of rate-box div -->
+                    <!-- Including More Recipres part -->
+
+                    <div class="more-recipe">
+                        <h5>Ricette Correlate:</h5>
+                        <div class="recipe-imgs">
+                            <div class="more-recipes">
+                                <ul class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-slides="li" data-cycle-prev=".p-17" data-cycle-next=".n-17" style="overflow: hidden;">
+                                    <li class="cycle-slide cycle-sentinel">
+                                        <a href="#">
+                                            <img width="222" height="144" src="images/demo/Pimento-Cheese-Potato-Skins2-222x144.jpg" alt="Pimento-Cheese-Potato-Skins">
+                                        </a>
+                                        <p class="info-box">Pimento Cheese Potato Skins</p>
+                                    </li>
+                                    <li class="cycle-slide">
+                                        <a href="#">
+                                            <img width="222" height="144" src="images/demo/Jalapeno-Poppers1-222x144.jpg" alt="Jalapeño-Poppers">
+                                        </a>
+                                        <p class="info-box">Jalapeno Poppers</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="prev p-17"></span>
+                            <span class="next n-17"></span>
+                        </div><!-- end of recipe-imgs div -->
+                    </div>
+
+                    <!-- Including Nutritional Info part -->
+                    <div class="nutritional" itemprop="nutrition" itemscope itemtype="http://schema.org/NutritionInformation">
+                        <h3>Valori Nutrizionali</h3>
+                        <p itemprop="description">Questa informazione è per porzione.</p>
+                        <ul>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Proteine</p>
+                                <span class="value">4.4g</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Fibre</p>
+                                <span class="value">0.8g</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Grassi Totali</p>
+                                <span class="value">5.5g</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Energia</p>
+                                <span class="value">137 Kcal</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Grassi Saturi</p>
+                                <span class="value">1.71g</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Sodio</p>
+                                <span class="value">348mg</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Carboidrati</p>
+                                <span class="value">17.3g</span>
+                            </li>
+                            <li class="nutrition">
+                                <p itemprop="name" class="type">Colesterolo</p>
+                                <span class="value">5mg</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <span class="w-pet-border"></span><br /><div class="ads-253x209">
+                    <a href="#"><img src="images/sidebar-ad.png" alt="Recipe Ads" /></a></div>
+                </div><!-- end of info-right div -->
+
+
+                <span class="w-pet-border"></span>
+
+            </div><!-- end of left-area -->
+        </div><!-- end of content div -->
+        <div class="bot-ads-area">
+            <div class="ads-642x79">
+                <a href="#"><img src="images/ad-652x95.png" alt="Recipe Ads" /></a>
+            </div>
+        </div>
+        <!-- CONTENT ENDS HERE -->
+
+    </div><!-- end of container div -->
+</div>
+<div class="w-pet-border"></div>
+<!-- ============= CONTAINER AREA ENDS HERE ============== -->
+
+<!-- ============= BOTTOM AREA STARTS HERE ============== -->
+<div id="bottom-wrap">
+    <ul id="bottom" class="clearfix">
+
+        <li class="about">
+            <a href="about-us.html"><img  src="images/footer-logo.png" alt="Food Recipes" class="footer-logo"/></a>
+            <p>Donec sollicitudin molestie malesuada. Proin eget tortor risus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. ...</p>
+            <a href="about-us.html" class="readmore">Read more About Us</a>
+        </li>
+
+        <li id="recent_recipe_footer_widget-3" class="Recent_Recipe_Footer_Widget"><h2 class="w-bot-border">
+            <span>Recent</span> Recipes</h2>
+            <ul class="recent-posts nostylewt">
+                <li class="clearfix">
+                    <a href="recipe-single-1.html" class="img-box"><img src="images/demo/7a0a46455c4ec56a5a02c097374fc513-63x53.jpg" class="attachment-most-rated-thumb wp-post-image" alt="7a0a46455c4ec56a5a02c097374fc513"/></a>
+                    <h5> <a href="recipe-single-1.html">Chocolate Earl Grey Pots de...</a></h5>
+                    <p>2 cups cream 120 grams dark chocolate, chopped 2 bags...</p>
+                </li>
+                <li class="clearfix">
+                    <a href="recipe-single-1.html" class="img-box"><img  src="images/demo/Pesto-Pizza-with-Roasted-Garlic-Potato2-63x53.jpg" class="attachment-most-rated-thumb wp-post-image" alt="Pesto-Pizza-with-Roasted-Garlic-Potato2"/></a>
+                    <h5> <a href="recipe-single-1.html">Pesto Pizza With Roasted Garlic...</a></h5>
+                    <p>Mention potatoes on pizza and you’ll get one of two...</p>
+                </li>
+            </ul>
+        </li>
+        <li id="displaytweetswidget-3" class="widget_displaytweetswidget"><h2>Inspiry Themes</h2>
+            <p>Check out 'Cream - Sweets and Bakers WordPress Theme' on
+                <a href="http://www.twitter.com/EnvatoMarket" target="_blank">@EnvatoMarket</a> by
+                <a href="http://www.twitter.com/InspiryThemes" target="_blank">@InspiryThemes</a>
+                <a href="http://twitter.com/search?q=%23themeforest&src=hash" target="_blank">#themeforest</a>
+                <a href="http://t.co/we8M81zKf0" target="_blank">http://t.co/we8M81zKf0</a><br/>
+                <small class="muted">- Thursday Nov 6 - 7:25am</small>
+            </p>
+            <p>Data Sanitization and Validation With WordPress
+                <a href="http://t.co/AJJoOERrwp" target="_blank">http://t.co/AJJoOERrwp</a>
+                via <a href="http://www.twitter.com/tutsplus" target="_blank">@tutsplus</a>
+                <br/><small class="muted">- Sunday Nov 2 - 8:02am</small>
+            </p>
+        </li>
+
+    </ul>
+    <!-- end of bottom div -->
+</div>
+<!-- end of bottom-wrap div -->
+<!-- ============= BOTTOM AREA ENDS HERE ============== -->
+
+
+<!-- ============= FOOTER STARTS HERE ============== -->
+
+<div id="footer-wrap">
+    <div id="footer">
+        <p class="copyright">Copyright &copy; 2016, Food Recipes - A Premium HTML Template</p>
+        <p class="dnd">Developed by <a href="http://themeforest.net/user/inspirythemes">Inspiry Themes</a></p>
+    </div>
+    <!-- end of footer div -->
+</div>
+<!-- end of footer-wrapper div -->
+
+<!-- ============= FOOTER STARTS HERE ============== -->
+<script type='text/javascript' src='js/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='js/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='js/jquery.validate.min.js?ver=1.11.1'></script>
+<script type='text/javascript' src='js/jquery.form.min.js?ver=3.48.0'></script>
+<script type='text/javascript' src='js/jquery.easing.1.3.js?ver=1.3'></script>
+<script type='text/javascript' src='js/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.3'></script>
+<script type='text/javascript' src='js/jquery.cycle2.js?ver=2.0130909'></script>
+<script type='text/javascript' src='js/nivo-slider/jquery.nivo.slider.js?ver=2.7.1'></script>
+<script type='text/javascript' src='js/accordion-slider.js?ver=1.0'></script>
+<script type='text/javascript' src='js/jquery-ui.min.js?ver=1.10.2'></script>
+<script type='text/javascript' src='js/select2.full.min.js?ver=4.0'></script>
+<script type='text/javascript' src='js/script.js?ver=1.0'></script>
+
+</body>
+</html>
